@@ -10,7 +10,7 @@ Clone or Download as Zip then run **npm install** to install dependencies and **
 ## Note
 Please install first globally learnyounode via "npm install -g learnyounode"
 
-To test each solution then run **learnyounode** first then **learnyounode "<exercise-name-directory>\index.js"**
+To test each solution then run **learnyounode** first then **learnyounode "exercise-name-directory\index.js"**
 
 Output:
 ![learnyounode-output](https://user-images.githubusercontent.com/32665778/76736817-890e4c80-67a2-11ea-93b9-446ff058644a.PNG)
