@@ -1,10 +1,7 @@
-'use strict';
-
 const http = require('http');
 
 if (process.argv.length < 3) {
   console.log('Please specify an endpoint');
-  return;
 }
 
 const endpoint = process.argv[2];

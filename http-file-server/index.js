@@ -1,5 +1,3 @@
-'use strict';
-
 const http = require('http');
 const fs = require('fs');
 
@@ -8,7 +6,6 @@ const file = process.argv[3];
 
 if (process.argv.length < 3) {
   console.error('Please specify a port and a file to stream.');
-  return;
 }
 
 const server = http.createServer((_request, response) => {

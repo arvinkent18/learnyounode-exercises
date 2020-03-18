@@ -1,13 +1,11 @@
-'use strict';
-
 const fs = require('fs');
+
 const path = require('path');
 
-const ext = '.' + process.argv[3];
+const ext = process.argv[3];
 
 if (process.argv.length < 4) {
   console.log('Please specify a path and a filter parameter');
-  return;
 }
 
 fs.readdir(process.argv[2], (err, fileList) => {
@@ -16,9 +14,7 @@ fs.readdir(process.argv[2], (err, fileList) => {
     return;
   }
 
-  const filteredFiles = fileList.filter((file) => {
-    return path.extname(file) === ext;
-  });
+  const filteredFiles = fileList.filter((file) => path.extname(file) === `.${ext}`);
 
   filteredFiles.forEach((file) => {
     console.log(file);

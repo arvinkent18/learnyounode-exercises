@@ -1,9 +1,8 @@
-'use strict';
+let result = 0;
 
-const numbers = process.argv.splice(2);
+for (let i = 2; i < process.argv.length; i += 1) {
+  result += Number(process.argv[i]);
+}
 
-const result = numbers.reduce((previousValue, currentValue) => {
-  return previousValue + parseInt(currentValue);
-}, 0);
-
+// eslint-disable-next-line no-console
 console.log(result);

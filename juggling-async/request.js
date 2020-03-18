@@ -1,6 +1,6 @@
-'use strict';
 
 const http = require('http');
+// eslint-disable-next-line import/no-unresolved
 const bl = require('bl');
 
 module.exports = {
